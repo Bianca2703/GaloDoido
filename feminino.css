@@ -1,0 +1,54 @@
+header{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+header h1{
+    color: white;
+    align-items: center;
+    margin-left: 850px;
+    display:inline-flex;
+    justify-content: center;
+    justify-self:center;
+    margin-top: 50px;
+
+
+
+}
+
+.secao {
+    width: 200px; /* largura do retângulo */
+    height: auto; /* altura automática para se ajustar ao conteúdo */
+    border: 5px 2px #000; /* borda do retângulo */
+    padding: 10px; /* espaço interno */
+    box-sizing: border-box; /* inclui borda e padding no tamanho total */
+    display: flex; /* centraliza o conteúdo se necessário */
+    flex-direction: column; /* empilha os elementos verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* sombra da caixa */
+    margin-left: 60px;
+  }
+
+  .img {
+    max-width: 100%; /* garante que a imagem não ultrapasse o retângulo */
+    height: auto; /* mantém a proporção da imagem */
+}
+
+.produto{
+    display: flex;
+    margin-top: 40px;
+  }
+
+  footer{
+    background-color: black;
+    padding-top: 50px;
+    margin-top: 70px;
+    padding-bottom: 50px;
+
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}

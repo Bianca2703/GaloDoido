@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <nav id="menu">
+    <header>
+        <li>
+            <ul><a href="eletromesticos.html">Infantil</a></ul>
+            <ul><a href="feminino.html">Feminino</a></ul>
+            <ul><a href="eletrodomesticos.html">Masculino</a></ul>
+            <ul><a href="eletrodomesticos.html">Acessórios</a></ul>
+            <ul><a href="eletrodomesticos.html">Arena MRV</a></ul>
+            <ul><a href="tv.html">Brinquedos</a></ul>
+            
+        </li>
+    </header>
+</nav>
+
+   
+
+
+      <div class="slideshow-container">
+
+        <!-- Slide 1 -->
+        <div class="mySlides">
+            <img src="galoo.webp">
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="mySlides">
+            <img src="camisaglo.webp" alt="Slide 2" height="800px">
+        </div>
+    
+        <!-- Slide 3 -->
+        <div class="mySlides">
+            <img src="linhagalo.jpg">
+        </div>
+    
+        <!-- Botões de navegação -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- Ponto de navegação -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        // Controle do slide próximo/anterior
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        // Controle dos pontos de navegação
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+<div id="parte">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, magnam, omnis mollitia facilis odit quo cum dolores enim ab libero ipsa. Autem ea, earum quos quod nobis sint praesentium omnis.</p>
+</div>
+
+
+<section class="produto">
+<div class="secao">
+    <img class="img" src="produto1.png" alt="">
+    <p>A partir de R$ 100,00</p>
+    <button>Adicionar ao carrinho</button>
+</div>
+
+<div class="secao">
+    <img class="img" src="produto2.png" alt="">
+    <p>A partir de R$ 25,00</p> 
+    <button>Adicionar ao carrinho</button> 
+</div>
+
+<div class="secao">
+    <img class="img" src="produto3.png" alt="">
+    <p>A partir de R$ 80,00</p>   
+    <button>Adicionar ao carrinho</button>
+</div>
+
+<div class="secao">
+    <img class="img" src="produto1.png" alt="">
+    <p>A partir de R$ 80,00</p>   
+    <button>Adicionar ao carrinho</button>
+</div>
+
+<div class="secao">
+    <img class="img" src="produto2.png" alt="">
+    <p>A partir de R$ 80,00</p>   
+    <button>Adicionar ao carrinho</button>
+</div>
+
+<div class="secao">
+    <img class="img" src="produto3.png" alt="">
+    <p>A partir de R$ 80,00</p>   
+    <button>Adicionar ao carrinho</button>
+</div>
+
+<div class="secao">
+    <img class="img" src="produto1.png" alt="">
+    <p>A partir de R$ 80,00</p>   
+    <button>Adicionar ao carrinho</button>
+</div>
+
+</section>
+
+
+<section class="produto">
+    <div class="secao">
+        <img class="img" src="produto1.png" alt="">
+        <p>A partir de R$ 100,00</p>
+        <button>Adicionar ao carrinho</button>
+    </div>
+    
+    <div class="secao">
+        <img class="img" src="produto2.png" alt="">
+        <p>A partir de R$ 25,00</p> 
+        <button>Adicionar ao carrinho</button> 
+    </div>
+    
+    <div class="secao">
+        <img class="img" src="produto3.png" alt="">
+        <p>A partir de R$ 80,00</p>   
+        <button>Adicionar ao carrinho</button>
+    </div>
+    
+    <div class="secao">
+        <img class="img" src="produto1.png" alt="">
+        <p>A partir de R$ 80,00</p>   
+        <button>Adicionar ao carrinho</button>
+    </div>
+    
+    <div class="secao">
+        <img class="img" src="produto2.png" alt="">
+        <p>A partir de R$ 80,00</p>   
+        <button>Adicionar ao carrinho</button>
+    </div>
+    
+    <div class="secao">
+        <img class="img" src="produto3.png" alt="">
+        <p>A partir de R$ 80,00</p>   
+        <button>Adicionar ao carrinho</button>
+    </div>
+    
+    <div class="secao">
+        <img class="img" src="produto1.png" alt="">
+        <p>A partir de R$ 80,00</p>   
+        <button>Adicionar ao carrinho</button>
+    </div>
+    
+    </section>
+
+
+    
+
+    
+
+
+<footer>
+    <p>Entre em contato conosco: galo.naveia@gmail.com</p>
+    <p>Confira nossas redes socias</p>
+    <p>Seja sócio</p>
+</footer>
+</body>
+</html>
